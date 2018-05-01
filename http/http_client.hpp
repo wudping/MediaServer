@@ -8,7 +8,7 @@
 #include <netinet/in.h>
 #include <unistd.h>
 #include <netdb.h>
-
+#include <iostream>
 
 class HttpClient {
     int sock;
