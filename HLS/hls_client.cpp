@@ -132,9 +132,9 @@ int main() {
 			cout << "Error opening video stream" << endl; 
 			return -1; 
 		}
-		int frame_width = cap.get(CV_CAP_PROP_FRAME_WIDTH); 
-		int frame_height = cap.get(CV_CAP_PROP_FRAME_HEIGHT); 	
-		int fps = cap.get(CV_CAP_PROP_FPS);
+		int frame_width = cap.get(CAP_PROP_FRAME_WIDTH); 
+		int frame_height = cap.get(CAP_PROP_FRAME_HEIGHT); 	
+		int fps = cap.get(CAP_PROP_FPS);
 		while(duration_passed < cur_duration)
 		{
 			cap >> frame;
